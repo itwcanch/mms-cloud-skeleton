@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'global-docker.pkg.dev/$PROJECT_ID/sonar-docker-repo/sonar:2.0', '.' ]
+images:
+- 'global-docker.pkg.dev/$PROJECT_ID/sonar-docker-repo/sonar:2.0'
